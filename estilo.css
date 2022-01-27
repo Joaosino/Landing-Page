@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-image: url('./midia/background.png');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #0008;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1{
+  font-size: clamp(2rem, 8vw, 8rem);
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: lighter ;
+  color: white;
+}
+h2{
+  font-size: clamp(1rem, 4vw, 4rem);
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: white;
+}
+
+button{
+  background-color: #fae12c;
+  border: none;
+  border-radius: 5px;
+  width: 75%;
+  font-size: 16px;
+  font-family: 'Montserrat Alternates light 300', sans-serif;
+  transition: 0.4s;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover{
+  background-color: rgb(49, 49, 49);
+  transition: 0.4s;
+}
