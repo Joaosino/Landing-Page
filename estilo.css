@@ -5,21 +5,27 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  
 }
 body{
   font-size: 100%;
-  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+  background: linear-gradient(68.15deg, rgba(25, 0, 255, 1) 16.62%, rgb(214, 25, 25) 85.61%);
+  background-repeat: no-repeat;
+  height: 1100px;  
+  background-size: cover;
+  
 }
 .cabecalho{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 24px;
+  padding: 10px;
+  border-bottom: 0.4px solid #fff2e7;
 }
 
 .cabecalho-imagem{
-  height: 72px;;
+  height: 72px;
 }
 .cabecalho-menu{
   display: flex;
@@ -32,19 +38,21 @@ body{
   font-size: 18px;
 }
 .conteudo{
-  border-top: 0.4px solid #fff2e7;
   margin-bottom: 48px;
 }
 .conteudo-principal{
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 .conteudo-principal-escrito{
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 32px; 
+  width: 50%;
 }
 .conteudo-principal-escrito-titulo{
   font-family: 'Righteous', cursive;
@@ -55,26 +63,26 @@ body{
 .conteudo-principal-escrito-subtitulo{
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
   color: #ECD6C4;
 }
-.conteudo-principal-escrito-botao{
-  background-color: #ECD6C4;
-  width: 180px;
-  height: 60px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+.conteudo-principal-escrito-paragrafo{
+  font-family: 'Sarala', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: #ECD6C4;
+}
+.conteudo-principal-escrito-paragrafo a{
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  color: #2f2325;
+  font-size: 14px;
+  color: #ECD6C4;
+  text-decoration: underline;
 }
-.conteudo-principal-escrito-botao:hover{
-  background-color: rgba(236,214,196,0.53);
-}
+
 .conteudo-principal-imagem{
   height: 430px;
+  border-radius: 25%;
 }
 .conteudo-secundario{
   display: flex;
@@ -85,7 +93,7 @@ body{
 }
 .conteudo-secundario-subtitulo{
   border-top: 0.4px solid #fff2e7;
-  padding-top: 48px;
+  padding-top: 30px;
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 24px;
@@ -98,12 +106,80 @@ body{
   font-size: 18px;
   color: #ECD6C4;
 }
-.rodape{
-  padding: 32px;
-  border-top: 0.4px solid #fff2e7;
+.conteudo-secundario-paragrafo a{
+  font-family: 'Sarala', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ECD6C4;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.rodape-imagem{
-  height: 48px;
-  display: block;
-  margin: 0 auto;
+.conteudo-secundario-imagem{
+  margin-top: 20px;
+  height: 300px;
+  border-radius: 50%;
+}
+.conteudo-secundario-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.conteudo-secundario-projeto{
+  width: 450px;
+  height: 400px;
+  border: 1px #ECD6C4 solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.conteudo-secundario-projeto .titulo{
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ECD6C4;
+  margin-bottom: 10px;
+  border-bottom: 1px #ECD6C4 solid;
+}
+.conteudo-secundario-projeto .imagem{
+  height: 200px;
+}
+.conteudo-secundario-projeto .paragrafo{
+  font-family: 'Sarala', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #ECD6C4;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.conteudo-principal-tabela{
+  border: 1px #ECD6C4 solid;
+  padding: 5px;
+  height: 200px;
+  border-radius: 8px;
+}
+.conteudo-principal-tabela-linha{
+  font-size: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 700;
+  color: #ECD6C4;
+  text-decoration: none;
+  text-align: center;
+}
+.conteudo-principal-tabela-linha a{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 700;
+  color: #ECD6C4;
+  text-decoration: none;
+  text-align: center;
 }
