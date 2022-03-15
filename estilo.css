@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +88,6 @@ body {
   height: 300px;
   border-radius: 50%;
 }
-
 .conteudo-secundario {
   display: flex;
   flex-direction: column;
@@ -120,7 +118,6 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
-
 .conteudo-secundario-container {
   width: 90%;
   display: flex;
@@ -141,7 +138,6 @@ body {
   justify-content: center;
   gap: 5px;
 }
-
 .conteudo-secundario-projeto .titulo {
   font-family: 'Righteous', cursive;
   font-weight: 700;
@@ -161,7 +157,6 @@ body {
   width: 90%;
   margin-top: 20px;
 }
-
 .conteudo-principal-tabela {
   border: 1px #ecd6c4 solid;
   padding: 5px;
@@ -185,7 +180,6 @@ body {
   text-decoration: none;
   text-align: center;
 }
-
 @media screen and (max-width: 600px) {
   .cabecalho {
     border-bottom: 0.4px solid #fff2e7;
@@ -257,7 +251,6 @@ body {
     left: 0;
     gap: 0;
   }
-
   #checkbox-menu:checked, .cabecalho-menu {
     transition: 0.8s ease-in-out;
     display: none;
@@ -319,13 +312,11 @@ body {
     color: #ecd6c4;
     text-decoration: underline;
   }
-  
   .conteudo-principal-imagem {
     margin-top: 20px;
     height: 300px;
     border-radius: 50%;
   }
-  
   .conteudo-secundario {
     width: 90%;
     display: flex;
@@ -408,7 +399,6 @@ body {
     justify-content: center;
     gap: 5px;
   }
-  
   .conteudo-secundario-projeto .titulo {
     font-family: 'Righteous', cursive;
     font-weight: 700;
