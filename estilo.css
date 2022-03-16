@@ -5,16 +5,100 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html{
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(0.25turn, #000000,#120c56);
+}
+.stars{
+  z-index: -1;
+  position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+  box-shadow: 50px 30px white,
+  67px 385px white,
+  736px 1977px white,
+  412px 705px white,
+  573px 1599px white,
+  729px 1573px white,
+  1477px 1882px white,
+  265px 1311px white,
+  333px 363px white,
+  1079px 432px white,
+  1036px 374px white,
+  1206px 641px white,
+  152px 164px white,
+  1152px 950px white,
+  1467px 414px white,
+  524px 544px white,
+  1800px 572px white,
+  1254px 977px white,
+  1922px 987px white,
+  1405px 781px white,
+  567px 880px white,
+  743px 1124px white,
+  1259px 59px white,
+  839px 317px white,
+  9520px 1613px white,
+  1840px 1109px white,
+  538px 827px white,
+  1673px 143px white,
+  1090px 1584px white,
+  1543px 1312px white,
+  201px 863px white;
+  animation: anim-stars 20s linear infinite;
+}
+.stars::after{
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white,
+  67px 385px white,
+  736px 1977px white,
+  412px 705px white,
+  573px 1599px white,
+  729px 1573px white,
+  1477px 1882px white,
+  265px 1311px white,
+  333px 363px white,
+  1079px 432px white,
+  1036px 374px white,
+  1206px 641px white,
+  152px 164px white,
+  1152px 950px white,
+  1467px 414px white,
+  524px 544px white,
+  1800px 572px white,
+  1254px 977px white,
+  1922px 987px white,
+  1405px 781px white,
+  567px 880px white,
+  743px 1124px white,
+  1259px 59px white,
+  839px 317px white,
+  9520px 1613px white,
+  1840px 1109px white,
+  538px 827px white,
+  1673px 143px white,
+  1090px 1584px white,
+  1543px 1312px white,
+  201px 863px white;
+}
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-550px);
+    }
+}
 body {
   font-size: 100%;
-  background: linear-gradient(
-    68.15deg,
-    rgba(25, 0, 255, 1) 16.62%,
-    rgb(214, 25, 25) 85.61%
-  );
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
 }
 .cabecalho {
   display: flex;
@@ -29,6 +113,7 @@ body {
 }
 .cabecalho-imagem {
   height: 72px;
+  background-color: #fff2e7;
 }
 .cabecalho-menu {
   display: flex;
@@ -379,14 +464,6 @@ body {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-  }
-  .conteudo-principal .conteudo-principal-escrito-titulo {
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Sarala', sans-serif;
-    font-weight: 700;
-    color: #ecd6c4;
-    text-align: center;
   }
   .conteudo-secundario-projeto {
     width: 95%;
